@@ -14,6 +14,10 @@ rm -rf "$PKGROOT"
 mkdir -p "$PKGROOT/DEBIAN" "$PKGROOT/Applications"
 cp -R "$APP" "$PKGROOT/Applications/"
 
+# Re-assert app icon into the packaged bundle (c- name survives the env file filter).
+cp "$ROOT/assets/airplayd-152.png" "$PKGROOT/Applications/airplayd.app/c-appicon@2x.png"
+cp "$ROOT/assets/airplayd-167.png" "$PKGROOT/Applications/airplayd.app/c-appicon@3x.png"
+
 cat > "$PKGROOT/DEBIAN/control" <<CTRL
 Package: $PKGID
 Name: airplayd

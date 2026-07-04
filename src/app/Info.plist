@@ -9,13 +9,13 @@
     <key>CFBundleShortVersionString</key><string>0.2</string>
     <key>CFBundleExecutable</key>      <string>airplayd</string>
     <key>CFBundlePackageType</key>     <string>APPL</string>
-    <key>CFBundleIconFile</key>        <string>AppIcon76x76</string>
+    <key>CFBundleIconFile</key>        <string>c-appicon</string>
     <key>CFBundleIcons</key>
     <dict>
         <key>CFBundlePrimaryIcon</key>
         <dict>
             <key>CFBundleIconFiles</key>
-            <array><string>AppIcon60x60</string></array>
+            <array><string>c-appicon</string></array>
         </dict>
     </dict>
     <key>CFBundleIcons~ipad</key>
@@ -23,11 +23,7 @@
         <key>CFBundlePrimaryIcon</key>
         <dict>
             <key>CFBundleIconFiles</key>
-            <array>
-                <string>AppIcon60x60</string>
-                <string>AppIcon76x76</string>
-                <string>AppIcon83.5x83.5</string>
-            </array>
+            <array><string>c-appicon</string></array>
         </dict>
     </dict>
     <key>LSRequiresIPhoneOS</key>      <true/>

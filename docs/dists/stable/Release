@@ -7,16 +7,16 @@ Architectures: iphoneos-arm iphoneos-arm64
 Components: main
 Description: Derek's personal jailbreak repo — airplayd and friends.
 MD5Sum:
- 694fadacc9c3f3eafba459ed6eeb9883 742 main/binary-iphoneos-arm/Packages
- afe4014c0c593dd061254676e51723ff 587 main/binary-iphoneos-arm/Packages.bz2
- d8dd1028bff43402b891f69ac794bf55 532 main/binary-iphoneos-arm/Packages.gz
+ 534e8a454e28812b2553e6c837674b43 742 main/binary-iphoneos-arm/Packages
+ be07b3d069944d894ff25c9b728759ed 594 main/binary-iphoneos-arm/Packages.bz2
+ 22061b5d72ff6e8ed7e73d93bcfbadcd 533 main/binary-iphoneos-arm/Packages.gz
  d41d8cd98f00b204e9800998ecf8427e 0 main/binary-iphoneos-arm64/Packages
  4059d198768f9f8dc9372dc1c54bc3c3 14 main/binary-iphoneos-arm64/Packages.bz2
- 476f99141cad4f0f8291e4055be2209e 29 main/binary-iphoneos-arm64/Packages.gz
+ 3203a3646e99b8632fa78ba2e5fd9bb0 29 main/binary-iphoneos-arm64/Packages.gz
 SHA256:
- 1ada47e0dbc99575f81c48f18c89b581246c4b3d62f7915ae087969f8d69de50 742 main/binary-iphoneos-arm/Packages
- d0fd27de0ffa131163ecf75ff002eea90a6001c780ac7e260415f6c2ce28c415 587 main/binary-iphoneos-arm/Packages.bz2
- 12318839e9860666e1ca22174db2d2573fcd3fde18d9665c5b9b29c936bfbef6 532 main/binary-iphoneos-arm/Packages.gz
+ 31068d1fbda88ac36f4caa39ecb23c34b87a99e854463ab9c03a28b2ded7b893 742 main/binary-iphoneos-arm/Packages
+ 4bad6e94d50c6e5886d4d0d79f5d3926466b0a2647bd6da1043b6155b72cbe41 594 main/binary-iphoneos-arm/Packages.bz2
+ 28039e9a802336832a13e0cc1939cbb3c11270ff124afe79f4cb203248daafcc 533 main/binary-iphoneos-arm/Packages.gz
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-iphoneos-arm64/Packages
  d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 main/binary-iphoneos-arm64/Packages.bz2
- 93bf55a27b70de39dc5914717d70a4ab421c36a7dc4b29a4dd1f1266a2dc460b 29 main/binary-iphoneos-arm64/Packages.gz
+ 0c524af952d55d8ffbeb7dc6047e4af96108038958601f5c53417388554112ad 29 main/binary-iphoneos-arm64/Packages.gz

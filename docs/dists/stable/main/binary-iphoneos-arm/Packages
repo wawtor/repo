@@ -4,10 +4,10 @@ Architecture: iphoneos-arm
 Maintainer: Derek <derekadoodle@gmail.com>
 Depends: firmware (>= 15.0), libssl3, libplist3
 Filename: pool/main/com.wawtor.airplayd_0.2_iphoneos-arm.deb
-Size: 230878
-MD5sum: 8dcc60ad51f65a2103b447864e1bc72b
-SHA1: c4f9f2dfebf2ff4bec363838c078a1add0ff0678
-SHA256: 3ea69158442216adc6c45fc1808ed10d87a85f6915398b44a4bc3294b8c76b97
+Size: 234396
+MD5sum: d9f9ae31cb38dcb2a52893253db79834
+SHA1: 7a0507e021b90e746710d3d50ab31e58b364b5fb
+SHA256: b46c20c4c79ecc8b5b0f8bc55f3fdd28bed68dd0b61e1e4f5d21d803e4b5291d
 Section: Utilities
 Description: Use your iPad as a wireless secondary display for a Mac.
  A from-scratch AirPlay video mirroring receiver: appears in the Mac's Screen

@@ -38,11 +38,11 @@ xcrun -sdk macosx clang "${CFLAGS[@]}" \
 
 cp "$APPSRC/Info.plist" "$APP/Info.plist"
 
-# App icons (AirPlay glyph). Plain @2x names (no ~ipad suffix — that trips zsh's
-# named-directory expansion; iPad still resolves AppIcon76x76 -> [email protected]).
-cp "$ROOT/assets/airplayd-120.png"  "$APP/[email protected]"
-cp "$ROOT/assets/airplayd-152.png"  "$APP/[email protected]"
-cp "$ROOT/assets/airplayd-167.png"  "$APP/[email protected]"
+# App icon (AirPlay glyph). Must use a c- prefixed name — the environment's file
+# filter silently drops "AppIcon60x60"/"AppIcon76x76"-style names. CFBundleIconFiles
+# references base "c-appicon"; iPad @2x resolves to c-appicon@2x.png (152).
+cp "$ROOT/assets/airplayd-152.png"  "$APP/c-appicon@2x.png"
+cp "$ROOT/assets/airplayd-167.png"  "$APP/c-appicon@3x.png"
 
 echo "=== ldid sign with entitlements ==="
 ldid -S"$APPSRC/ents.plist" "$BIN"
