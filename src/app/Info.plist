@@ -2,12 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>CFBundleName</key>            <string>AirPlayDisplay</string>
-    <key>CFBundleDisplayName</key>     <string>AirPlay Display</string>
-    <key>CFBundleIdentifier</key>      <string>com.wawtor.airplaydisplay</string>
-    <key>CFBundleVersion</key>         <string>0.1</string>
-    <key>CFBundleShortVersionString</key><string>0.1</string>
-    <key>CFBundleExecutable</key>      <string>AirPlayDisplay</string>
+    <key>CFBundleName</key>            <string>airplayd</string>
+    <key>CFBundleDisplayName</key>     <string>airplayd</string>
+    <key>CFBundleIdentifier</key>      <string>com.wawtor.airplayd</string>
+    <key>CFBundleVersion</key>         <string>0.2</string>
+    <key>CFBundleShortVersionString</key><string>0.2</string>
+    <key>CFBundleExecutable</key>      <string>airplayd</string>
     <key>CFBundlePackageType</key>     <string>APPL</string>
     <key>LSRequiresIPhoneOS</key>      <true/>
     <key>MinimumOSVersion</key>        <string>15.0</string>

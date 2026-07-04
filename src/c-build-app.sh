@@ -10,8 +10,8 @@ LIBDIR="$ROOT/build/ios"
 DEPS="$ROOT/vendor/ios-deps/usr"
 UXLIB="$ROOT/vendor/UxPlay/lib"
 OUT="$ROOT/build/ios"
-APP="$OUT/AirPlayDisplay.app"
-BIN="$APP/AirPlayDisplay"
+APP="$OUT/airplayd.app"
+BIN="$APP/airplayd"
 
 # Ensure the core lib exists.
 [ -f "$LIBDIR/libairplay.a" ] || { echo "libairplay.a missing — run src/c-build-libairplay.sh first"; exit 1; }

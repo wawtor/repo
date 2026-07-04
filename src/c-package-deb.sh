@@ -2,9 +2,9 @@
 # c-package-deb.sh — M5: package AirPlayDisplay.app into an installable .deb (rootful iphoneos-arm).
 set -euo pipefail
 ROOT="/Users/dmw/projects/ipad-airplay-display"
-APP="$ROOT/build/ios/AirPlayDisplay.app"
-VERSION="0.1"
-PKGID="com.wawtor.airplaydisplay"
+APP="$ROOT/build/ios/airplayd.app"
+VERSION="0.2"
+PKGID="com.wawtor.airplayd"
 DEB="$ROOT/build/deb"
 PKGROOT="$DEB/pkgroot"
 
@@ -16,7 +16,7 @@ cp -R "$APP" "$PKGROOT/Applications/"
 
 cat > "$PKGROOT/DEBIAN/control" <<CTRL
 Package: $PKGID
-Name: AirPlay Display
+Name: airplayd
 Version: $VERSION
 Architecture: iphoneos-arm
 Description: Use your iPad as a wireless secondary display for a Mac.
@@ -32,13 +32,13 @@ CTRL
 # Register with SpringBoard on install; unregister on removal.
 cat > "$PKGROOT/DEBIAN/postinst" <<'POST'
 #!/bin/sh
-uicache -p /Applications/AirPlayDisplay.app || true
+uicache -p /Applications/airplayd.app || true
 exit 0
 POST
 
 cat > "$PKGROOT/DEBIAN/prerm" <<'PRE'
 #!/bin/sh
-killall AirPlayDisplay 2>/dev/null || true
+killall airplayd 2>/dev/null || true
 exit 0
 PRE
 
@@ -47,6 +47,7 @@ cat > "$PKGROOT/DEBIAN/postrm" <<'POSTRM'
 uicache 2>/dev/null || true
 exit 0
 POSTRM
+# (postrm intentionally generic)
 
 chmod 0755 "$PKGROOT/DEBIAN/postinst" "$PKGROOT/DEBIAN/prerm" "$PKGROOT/DEBIAN/postrm"
 

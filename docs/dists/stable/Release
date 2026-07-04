@@ -1,0 +1,22 @@
+Origin: Wawtor Repo
+Label: Wawtor Repo
+Suite: stable
+Codename: stable
+Version: 1.0
+Architectures: iphoneos-arm iphoneos-arm64
+Components: main
+Description: Derek's personal jailbreak repo — airplayd and friends.
+MD5Sum:
+ 0f677e3384d9457f7f4339a65dc99a88 687 main/binary-iphoneos-arm/Packages
+ be1a5665578cca9963470f21fef038b5 533 main/binary-iphoneos-arm/Packages.bz2
+ 7d92acdf69cade882a850ff7474859ac 499 main/binary-iphoneos-arm/Packages.gz
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-iphoneos-arm64/Packages
+ 4059d198768f9f8dc9372dc1c54bc3c3 14 main/binary-iphoneos-arm64/Packages.bz2
+ 1c6e07f62de68d3466639a69aeb7fc20 29 main/binary-iphoneos-arm64/Packages.gz
+SHA256:
+ f60925b76c704a0b68f7d056bc2b64474149483ddd18e78465317c9317ba61c6 687 main/binary-iphoneos-arm/Packages
+ 760161be62d1ccce976a60d48179531a70d53e6bb99ab803c66a964fb26768d5 533 main/binary-iphoneos-arm/Packages.bz2
+ f66a9da324da2bb78dc5facba59fe52b4250fe52bda7c78357f1c5bda6a24ecd 499 main/binary-iphoneos-arm/Packages.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-iphoneos-arm64/Packages
+ d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058 14 main/binary-iphoneos-arm64/Packages.bz2
+ 24478bfce48726457c0527f1b8f1314e4ef08d1491e0f1f1c5fd5ac61f531eee 29 main/binary-iphoneos-arm64/Packages.gz

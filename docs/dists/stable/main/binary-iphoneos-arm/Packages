@@ -1,18 +1,18 @@
-Package: com.wawtor.airplaydisplay
-Version: 0.1
+Package: com.wawtor.airplayd
+Version: 0.2
 Architecture: iphoneos-arm
 Maintainer: Derek <derekadoodle@gmail.com>
 Depends: firmware (>= 15.0), libssl3, libplist3
-Filename: debs/com.wawtor.airplaydisplay_0.1_iphoneos-arm.deb
-Size: 223450
-MD5sum: 7c99d5da17cafd50830720f5e2f2cd91
-SHA1: 1fa68d07d87d9f5577098c1c19e1c3290f1bd057
-SHA256: 9fd1b32e0dec8e154c0bbf85333dda8ca191c1aa6b1356afa338087a1bd9004d
+Filename: pool/main/com.wawtor.airplayd_0.2_iphoneos-arm.deb
+Size: 223668
+MD5sum: ffe083d17748a3fe649792fa9cc9c7a1
+SHA1: 9712696fe5ef1ad610e0ae97af9cbca260394e5e
+SHA256: cac9211c75eac2953e2c91531c2865824329d1e7cfeae587c4c78c748f5f23af
 Section: Utilities
 Description: Use your iPad as a wireless secondary display for a Mac.
  A from-scratch AirPlay video mirroring receiver: appears in the Mac's Screen
  Mirroring menu and supports "Use as Separate Display" (extended desktop).
 Tag: purpose::uikit
 Author: Derek
-Name: AirPlay Display
+Name: airplayd
 
