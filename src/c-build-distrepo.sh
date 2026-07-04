@@ -81,6 +81,23 @@ gpg --batch --yes -abs -o Release.gpg Release
 gpg --export --armor > "$REPO/wawtor.gpg"
 gpg --export > "$REPO/wawtor-archive-keyring.gpg"
 
+# 7. Sileo display files — Sileo probes these on every refresh; missing => visible 404s.
+cat > "$REPO/sileo-featured.json" <<'JSON'
+{ "class": "FeaturedBannersView", "banners": [] }
+JSON
+# Root Release = repo-info Sileo shows on the source page (separate from the signed
+# apt dist Release under dists/; apt ignores this one, Sileo reads it for name/desc/icon).
+cat > "$REPO/Release" <<REL
+Origin: Wawtor Repo
+Label: Wawtor Repo
+Suite: stable
+Version: 1.0
+Codename: wawtor
+Architectures: $ARCHES
+Components: $COMP
+Description: Derek's personal jailbreak repo — airplayd and friends.
+REL
+
 echo "=== dist repo tree ==="
 find "$REPO/dists" "$REPO/pool" -type f | sed "s#$REPO/##"
 echo "pubkey: docs/wawtor.gpg"
