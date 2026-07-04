@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#ffffff"/>
+  <!-- Monitor: rounded-rect outline, open at bottom center -->
+  <path d="M 168 392 L 96 392 A 56 56 0 0 1 40 336 L 40 120 A 56 56 0 0 1 96 64
+           L 416 64 A 56 56 0 0 1 472 120 L 472 336 A 56 56 0 0 1 416 392 L 344 392"
+        fill="none" stroke="#1C7FF5" stroke-width="34"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Triangle pointing up -->
+  <path d="M 256 250 L 372 430 A 20 20 0 0 1 355 460 L 157 460 A 20 20 0 0 1 140 430 Z"
+        fill="#7FB2E8" stroke="#1C7FF5" stroke-width="34" stroke-linejoin="round"/>
+</svg>

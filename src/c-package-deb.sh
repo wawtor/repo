@@ -26,6 +26,7 @@ Maintainer: Derek <derekadoodle@gmail.com>
 Author: Derek
 Section: Utilities
 Depends: firmware (>= 15.0), libssl3, libplist3
+Icon: https://wawtor.github.io/repo/icons/airplayd.png
 Tag: purpose::uikit
 CTRL
 
