@@ -1,13 +1,13 @@
 Package: com.wawtor.airplayd
-Version: 0.2
+Version: 0.3
 Architecture: iphoneos-arm
 Maintainer: Derek <derekadoodle@gmail.com>
-Depends: firmware (>= 15.0), libssl3, libplist3
-Filename: pool/main/com.wawtor.airplayd_0.2_iphoneos-arm.deb
-Size: 234396
-MD5sum: d9f9ae31cb38dcb2a52893253db79834
-SHA1: 7a0507e021b90e746710d3d50ab31e58b364b5fb
-SHA256: b46c20c4c79ecc8b5b0f8bc55f3fdd28bed68dd0b61e1e4f5d21d803e4b5291d
+Depends: firmware (>= 15.0), libssl3, libplist3, preferenceloader
+Filename: pool/main/com.wawtor.airplayd_0.3_iphoneos-arm.deb
+Size: 249312
+MD5sum: 26acc18493c5c5b2cae588ddb63ed247
+SHA1: 6b9f711060fc36d712acaee8618dddeed3d0b642
+SHA256: 20d81b93b8268deb23d8ea3b2eb67734b650e806b728af466afefb2003249e57
 Section: Utilities
 Description: Use your iPad as a wireless secondary display for a Mac.
  A from-scratch AirPlay video mirroring receiver: appears in the Mac's Screen

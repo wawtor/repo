@@ -1,5 +1,6 @@
 #import "APDReceiver.h"
 #import "APDDisplayView.h"
+#import "APDForeground.h"
 #import <UIKit/UIKit.h>
 
 #import "raop.h"
@@ -61,12 +62,20 @@ static void cb_conn_init(void *cls) {
     APDReceiver *self = gReceiver;
     NSLog(@"[APD] connection init");
     [self.display showStatus:@"Connecting…"];
+    // Auto-connect: surface the display when a Mac starts a session.
+    if ([APDForeground autoConnectEnabled]) {
+        dispatch_async(dispatch_get_main_queue(), ^{ [APDForeground bringToFront]; });
+    }
 }
 static void cb_conn_destroy(void *cls) {
     APDReceiver *self = gReceiver;
     NSLog(@"[APD] connection destroy");
     [self.display reset];
     [self.display showStatus:@"Waiting for a Mac to connect…"];
+    // Session ended: drop back to the background so the iPad returns to normal use.
+    if ([APDForeground autoConnectEnabled]) {
+        dispatch_async(dispatch_get_main_queue(), ^{ [APDForeground sendToBack]; });
+    }
 }
 static void cb_conn_reset(void *cls, int reason) {
     APDReceiver *self = gReceiver;

@@ -5,8 +5,8 @@
     <key>CFBundleName</key>            <string>airplayd</string>
     <key>CFBundleDisplayName</key>     <string>airplayd</string>
     <key>CFBundleIdentifier</key>      <string>com.wawtor.airplayd</string>
-    <key>CFBundleVersion</key>         <string>0.2</string>
-    <key>CFBundleShortVersionString</key><string>0.2</string>
+    <key>CFBundleVersion</key>         <string>0.3</string>
+    <key>CFBundleShortVersionString</key><string>0.3</string>
     <key>CFBundleExecutable</key>      <string>airplayd</string>
     <key>CFBundlePackageType</key>     <string>APPL</string>
     <key>CFBundleIconFile</key>        <string>c-appicon</string>

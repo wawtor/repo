@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>title</key>
+    <string>airplayd</string>
+    <key>items</key>
+    <array>
+        <dict>
+            <key>cell</key>       <string>PSGroupCell</string>
+            <key>footerText</key> <string>Use this iPad as a wireless AirPlay display for your Mac. The receiver runs in the background and appears in your Mac's Screen Mirroring menu.</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>            <string>PSSwitchCell</string>
+            <key>label</key>           <string>AirPlay Server</string>
+            <key>key</key>             <string>ServerEnabled</string>
+            <key>default</key>         <true/>
+            <key>defaults</key>        <string>com.wawtor.airplayd</string>
+            <key>PostNotification</key><string>com.wawtor.airplayd.prefschanged</string>
+        </dict>
+        <dict>
+            <key>cell</key>       <string>PSGroupCell</string>
+            <key>footerText</key> <string>Turn the receiver on or off. When on, this iPad is discoverable and accepts connections.</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>            <string>PSSwitchCell</string>
+            <key>label</key>           <string>Auto-Connect</string>
+            <key>key</key>             <string>AutoConnect</string>
+            <key>default</key>         <true/>
+            <key>defaults</key>        <string>com.wawtor.airplayd</string>
+            <key>PostNotification</key><string>com.wawtor.airplayd.prefschanged</string>
+        </dict>
+        <dict>
+            <key>cell</key>       <string>PSGroupCell</string>
+            <key>footerText</key> <string>When a Mac starts mirroring, automatically bring the display to the foreground — and return to the background when it disconnects.</string>
+        </dict>
+
+        <dict>
+            <key>cell</key>       <string>PSGroupCell</string>
+            <key>label</key>      <string>Receiver Name</string>
+        </dict>
+        <dict>
+            <key>cell</key>            <string>PSEditTextCell</string>
+            <key>key</key>             <string>ReceiverName</string>
+            <key>defaults</key>        <string>com.wawtor.airplayd</string>
+            <key>PostNotification</key><string>com.wawtor.airplayd.prefschanged</string>
+            <key>placeholder</key>     <string>iPad name (Display)</string>
+            <key>autoCapitalizationType</key><integer>0</integer>
+            <key>autoCorrectionType</key>    <integer>1</integer>
+        </dict>
+        <dict>
+            <key>cell</key>       <string>PSGroupCell</string>
+            <key>footerText</key> <string>The name shown in your Mac's Screen Mirroring menu. Leave blank to use "&lt;iPad name&gt; (Display)". Takes effect on the next connection.</string>
+        </dict>
+    </array>
+</dict>
+</plist>

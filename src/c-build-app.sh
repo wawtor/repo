@@ -29,6 +29,7 @@ FRAMEWORKS=( -framework UIKit -framework Foundation -framework AVFoundation
 echo "=== compiling + linking app ==="
 xcrun -sdk macosx clang "${CFLAGS[@]}" \
     "$APPSRC/main.m" "$APPSRC/APDAppDelegate.m" "$APPSRC/APDDisplayView.m" "$APPSRC/APDReceiver.m" \
+    "$APPSRC/APDKeepAlive.m" "$APPSRC/APDForeground.m" "$APPSRC/APDPrefs.m" \
     "$LIBDIR/libairplay.a" \
     "$DEPS/lib/libcrypto.3.dylib" "$DEPS/lib/libplist-2.0.3.dylib" \
     "${FRAMEWORKS[@]}" \
